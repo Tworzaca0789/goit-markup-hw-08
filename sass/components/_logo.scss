@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  &__link {
+    font-family: var(--secondary-family);
+    font-weight: var(--medium-weight);
+    font-size: var(--font-size-l);
+    line-height: 1.1;
+    color: var(--color-font-hover);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+  &--dark {
+    color: var(--color-font-strong);
+
+    &:hover {
+      color: var(--color-font-hover);
+    }
+  }
+
+  &--light {
+    color: var(--color-font-secondary);
+
+    &:hover {
+      color: var(--color-font-hover);
+    }
+  }
+}

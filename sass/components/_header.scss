@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid var(--border-connecting);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__menu {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+  }
+}

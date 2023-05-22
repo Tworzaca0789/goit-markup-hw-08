@@ -1,0 +1,54 @@
+.link {
+  font-size: var(--font-size-primary);
+  text-decoration-line: none;
+
+  &--primary {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: var(--primary-style);
+    color: var(--color-font-secondary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-font-hover);
+    }
+  }
+
+  &--secondary {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: var(--primary-style);
+    padding-top: 9px;
+    color: var(--color-font-tertiary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-font-hover);
+    }
+  }
+
+  &--tertiary {
+    font-weight: var(--small-weight);
+    line-height: 1.1;
+    color: var(--color-font-mixed);
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+      color: var(--color-font-hover);
+    }
+  }
+  &--quaternary {
+    font-weight: var(--small-weight);
+    line-height: 1.1;
+    color: var(--color-font-primary);
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+
+    &:hover,
+    &:focus {
+      color: var(--color-font-hover);
+    }
+  }
+}

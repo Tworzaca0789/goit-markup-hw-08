@@ -1,0 +1,50 @@
+.modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  min-height: 581px;
+  transform: translate(-50%, -50%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: var(--color-background-primary);
+  box-shadow: 0px 1px 3px var(--color-box-shadow-tertiary),
+    0px 1px 1px var(--color-box-shadow-septenary),
+    0px 2px 1px var(--color-box-shadow-octonary);
+  border-radius: 4px;
+
+  &__switch {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    fill: var(--color-icon-quaternary);
+    border: 1px solid var(--color-border-quinary);
+    background-color: var(--color-background-primary);
+    padding: 6px;
+    border-radius: 50%;
+    z-index: 1;
+
+    &:hover {
+      fill: var(--color-icon-hover);
+      border-color: var(--color-border-quaternary);
+      background-color: var(--color-background-unique);
+      cursor: pointer;
+    }
+  }
+
+  &__form {
+    position: relative;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

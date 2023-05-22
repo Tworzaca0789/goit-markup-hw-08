@@ -1,0 +1,27 @@
+.record {
+  position: relative;
+  width: 448px;
+  height: 120px;
+  border: 1px solid var(--color-border-senary);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+  display: flex;
+  outline: none;
+  color: var(--color-font-mixed);
+  font-size: var(--font-size-s);
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-border-quaternary);
+    cursor: pointer;
+    border-radius: 13px;
+  }
+
+  &::placeholder {
+    color: var(--color-font-quaternary);
+  }
+}

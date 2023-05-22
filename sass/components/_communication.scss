@@ -1,0 +1,26 @@
+.communication {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    & > a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover,
+      &:focus {
+        fill: var(--color-font-hover);
+      }
+    }
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--color-font-hover);
+  }
+}

@@ -1,0 +1,37 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+
+  &__item {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-hover-transparency);
+    transform: translatey(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__text {
+    display: flex;
+    padding-top: 49px;
+    padding-right: 45px;
+    padding-bottom: 49px;
+    padding-left: 24px;
+    font-size: var(--font-size-tertiary);
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--color-font-secondary);
+  }
+  &:hover,
+  &:focus {
+    position: relative;
+    overflow: hidden;
+    
+    .overlay__item {
+      transform: translatey(0);
+    }
+  }
+}

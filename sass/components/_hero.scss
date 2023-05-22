@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  &__title {
+    font-weight: var(--big-weight);
+    font-size: var(--font-size-septenary);
+    line-height: 1.3;
+    color: var(--color-font-secondary);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    max-width: 696px;
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: center;
+    padding: 10px 42px;
+    align-items: center;
+    box-shadow: 0px 4px 4px var(--color-box-shadow-senary);
+
+    &:hover,
+    &:focus {
+      color: var(--color-font-secondary);
+    }
+  }
+}

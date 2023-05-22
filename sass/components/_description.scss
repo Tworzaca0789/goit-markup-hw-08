@@ -1,0 +1,44 @@
+.description {
+  background-color: var(--color-background-primary);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  list-style: none;
+  padding-top: 94px;
+
+  &__item {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__logo {
+    max-width: 270px;
+    max-height: 120px;
+    padding: 25px 100px;
+    border-radius: 4px;
+    background-color: var(--background-icon-light);
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+  }
+
+  &__title {
+    font-weight: var(--medium-weight);
+    font-size: var(--font-size-primary);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+  }
+  &__post {
+    font-size: var(--font-size-primary);
+    line-height: 1.7;
+    color: var(--color-font-mixed);
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+  }
+}

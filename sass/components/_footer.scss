@@ -1,0 +1,39 @@
+.footer {
+  background: var(--color-background-secondary);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    margin-right: 70px;
+  }
+
+  &__logo {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+
+  &__form {
+    position: relative;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-bottom: 94px;
+  }
+
+  &__title {
+    font-weight: var(--medium-weight);
+    font-style: bold;
+    font-size: var(--font-size-primary);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-font-secondary);
+  }
+}

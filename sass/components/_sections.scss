@@ -1,0 +1,29 @@
+.section {
+  background: var(--color-background-primary);
+
+  &--background-primary {
+    background: var(--background-transparency-cloud);
+    background-image: linear-gradient(
+        to top left,
+        var(--color-gradient-primary),
+        var(--color-gradient-primary)
+      ),
+      url(/goit-markup-hw-04/images/backgroundphoto/maintitle.jpg);
+    max-width: 1600;
+    background-repeat: round;
+    background-position: 50% 50%;
+  }
+  &--backgroung-secoundary {
+    background: var(--color-background-light);
+  }
+
+  &__title {
+    font-weight: var(--medium-weight);
+    font-size: var(--font-size-senary);
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}

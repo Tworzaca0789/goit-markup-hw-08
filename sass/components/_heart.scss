@@ -1,0 +1,11 @@
+body {
+  font-family: var(--primary-family);
+  font-weight: var(--global-weight);
+  font-style: var(--primary-style);
+  color: var(--color-font-primary);
+  background: var(--color-background-primary);
+}
+* {
+  padding: 0;
+  margin: 0;
+}

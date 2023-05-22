@@ -1,0 +1,31 @@
+.collection {
+  border: 0;
+  padding-bottom: 94px;
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--background-transparency-cloud);
+    color: var(--color-font-secondary);
+    font-weight: var(--medium-weight);
+    font-size: var(--font-size-primary);
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0, 03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  &__image {
+    mix-blend-mode: normal;
+  }
+}

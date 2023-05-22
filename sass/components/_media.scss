@@ -1,0 +1,23 @@
+.media {
+  display: flex;
+
+  &__item {
+    display: flex;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--filtr-primary {
+      fill: var(--color-icon-secondary);
+    }
+    &--filtr-secondary {
+      fill: var(--color-icon-primary);
+      background-color: var(--color-icon-tertiary);
+    }
+    &:hover,
+    &:focus {
+      fill: var(--color-icon-primary);
+      background-color: var(--color-icon-hover);
+    }
+  }
+}

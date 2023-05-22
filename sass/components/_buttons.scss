@@ -1,0 +1,46 @@
+.button {
+  font-size: var(--font-size-secondary);
+  background-color: var(--color-background-hover);
+  color: var(--color-font-secondary);
+  font-weight: var(--medium-weight);
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+
+  &--secondary {
+    background: var(--color-background-light);
+    color: var(--color-font-primary);
+    letter-spacing: 0.03em;
+    font-weight: var(--small-weight);
+    line-height: 1.6;
+    padding: 6px 22px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-background-hover);
+      color: var(--color-font-secondary);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    fill: var(--color-icon-primary);
+    margin-left: 24px;
+  }
+
+  &__name {
+    position: relative;
+    padding: 10px 76px;
+    display: flex;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px var(--color-box-shadow-senary);
+      background-color: var(--color-background-hover);
+      cursor: pointer;
+    }
+  }
+}
