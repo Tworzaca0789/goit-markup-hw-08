@@ -33,8 +33,11 @@
   --font-size-secondary: 16px;
   --font-size-tertiary: 18px;
   --font-size-quaternary: 20px;
+  --font-size-m: 24px;
   --font-size-l: 26px;
+  --font-size-medium: 34px;
   --font-size-senary: 36px;
+  --font-size-xl: 40px;
   --font-size-septenary: 44px;
   --color-box-shadow-primary: #00000008;
   --color-box-shadow-secondary: #00000010;
@@ -52,4 +55,6 @@
   --color-icon-quaternary: #000000;
   --color-icon-quinary: #212121;
   --color-gradient-primary: #2f303a40;
+  --global-color: red;
+  --color-green: green;
 }

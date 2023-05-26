@@ -1,14 +1,27 @@
+@use "../utils/mixins" as *;
 .header {
   border-bottom: 1px solid var(--border-connecting);
+  background-color: var(--color-green);
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &__menu {
-    display: flex;
-    gap: 93px;
     align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__menu {
+    display: none;
+    @include tablet {
+      display: flex;
+      gap: 83px;
+      align-items: center;
+    }
+    @include desktop {
+      gap: 93px;
+    }
   }
 }

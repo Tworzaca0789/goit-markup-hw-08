@@ -1,26 +1,47 @@
+@use "../utils/mixins" as *;
 .communication {
-  display: flex;
-  gap: 30px;
-
-  &__item {
+  display: none;
+  @include tablet {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    & > a {
+    flex-direction: column;
+    align-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include desktop {
+    gap: 30px;
+  }
+  &__item {
+    display: none;
+    @include tablet {
       display: flex;
-      align-items: center;
-      gap: 10px;
+      justify-content: right;
+      & > a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
-      &:hover,
-      &:focus {
+        &:hover,
+        &:focus {
+          fill: var(--color-font-hover);
+        }
+      }
+    }
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      & > a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    @include tablet {
+      &__icon:hover,
+      &__icon:focus {
         fill: var(--color-font-hover);
       }
     }
-  }
-
-  &__icon:hover,
-  &__icon:focus {
-    fill: var(--color-font-hover);
   }
 }

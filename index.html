@@ -67,15 +67,82 @@
               >
             </li>
           </ul>
+
+
+          <!--menu-mobile-->
+          <div class="menu-mobile">
+            <button
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              class="menu-toggle js-open-menu"
+              type="button"
+            >
+              <svg class="menu-toggle__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu_40px-1"></use>
+              </svg>
+            </button>
+</div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__button js-close-menu">
+        <svg
+          width="40"
+          height="40"
+        ><use href="./images/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
+        </svg>
+      </button>
+
+      <nav class="navigation-mobile">
+              <ul class="navigation-mobile__list">
+                <li class="navigation-mobile__item">
+                  <a class="navigation-mobile__link" href="./index.html"
+                    >Agencja</span></a
+                  >
+                </li>
+                <li class="navigation-mobile__item">
+                  <a class="navigation-mobile__link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="navigation-mobile__item">
+                  <a class="navigation-mobile__link" href="./index.html"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            
+            <ul class="communication-mobile">
+              <li class="communication__item">
+                <a href="tel:+48111111111" class="communication-mobile__link"
+                  >+48 111 111 111</a
+                >
+              </li>
+              <li class="communication-mobile__item">
+                <a href="mailto:info@devstudio.com" class="communication-mobile__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              
+            </ul>
+
+            <ul class="mobile-media">
+        <li><a href="#" class="mobile-media__link">Instagram</a></li>
+        <li><a href="#" class="mobile-media__link">Twitter</a></li>
+        <li><a href="#" class="mobile-media__link">Facebook</a></li>
+        <li><a href="#" class="mobile-media__link">Linkedln</a></li>
+      </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
+    <!--main--
     <main>
-      <!--main studio blok-hero-->
+      <!--main studio blok-hero--
       <section class="section--background-primary">
         <div class="container">
-          <!--blok hero-->
+          <!--blok hero--
           <div class="hero">
             <h1 class="hero__title">
               Efektywne rozwiązania dla waszego biznesu
@@ -87,7 +154,7 @@
         </div>
       </section>
 
-      <!--main studio blok description-->
+      <!--main studio blok description--
       <section class="section">
         <div class="container">
           <ul class="description">
@@ -142,7 +209,7 @@
           </ul>
         </div>
       </section>
-      <!--main studio blok collection-->
+      <!--main studio blok collection--
       <section class="section">
         <div class="container">
           <h2 class="section__title">Czym się zajmujemy</h2>
@@ -180,7 +247,7 @@
           </ul>
         </div>
       </section>
-      <!--main studio section--blok gallery-->
+      <!--main studio section--blok gallery--
       <section class="section--backgroung-secoundary">
         <div class="container">
           <h2 class="section__title">Nasz zespół</h2>
@@ -317,7 +384,7 @@
         </div>
       </section>
 
-      <!--main studio blok logos-->
+      <!--main studio blok logos--
       <section class="section">
         <div class="container">
           <h2 class="section__title">Nasi klienci</h2>
@@ -357,7 +424,7 @@
       </section>
     </main>
 
-    <!--footer studio i portfolio-->
+    <!--footer studio i portfolio--
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
@@ -443,7 +510,7 @@
       </div>
     </footer>
 
-    <!--MODAL-->
+    <!--MODAL-- z h1--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__switch" data-modal-close>
@@ -542,6 +609,15 @@
         </form>
       </div>
     </div>
+     <!--skrypt-mobile-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!--skrypt z h1--
     <script src="./js/modal.js"></script>
   </body>
 </html>

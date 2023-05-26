@@ -1,11 +1,17 @@
+@use "../utils/mixins" as *;
 .navigation {
-  display: flex;
-
+  display: none;
+  @include tablet {
+    display: flex;
+  }
   &__list {
     display: flex;
-    gap: 46px;
+    gap: 60px;
     padding-top: 32px;
     padding-bottom: 32px;
+    @include desktop {
+      gap: 46px;
+    }
   }
   &__item {
     display: flex;

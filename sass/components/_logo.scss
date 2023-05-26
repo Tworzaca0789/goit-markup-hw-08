@@ -1,13 +1,17 @@
+@use "../utils/mixins" as *;
 .logo {
   display: flex;
   &__link {
     font-family: var(--secondary-family);
     font-weight: var(--medium-weight);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
     line-height: 1.1;
     color: var(--color-font-hover);
     text-decoration: none;
     letter-spacing: 0.03em;
+    @include desktop {
+      font-size: var(--font-size-l);
+    }
   }
   &--dark {
     color: var(--color-font-strong);
