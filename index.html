@@ -68,72 +68,75 @@
             </li>
           </ul>
 
-
           <!--menu-mobile-->
-          <div class="menu-mobile">
-            <button
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-              class="menu-toggle js-open-menu"
-              type="button"
-            >
-              <svg class="menu-toggle__icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-menu_40px-1"></use>
-              </svg>
-            </button>
-</div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-container__button js-close-menu">
-        <svg
-          width="40"
-          height="40"
-        ><use href="./images/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
-        </svg>
-      </button>
 
-      <nav class="navigation-mobile">
-              <ul class="navigation-mobile__list">
-                <li class="navigation-mobile__item">
-                  <a class="navigation-mobile__link" href="./index.html"
-                    >Agencja</span></a
-                  >
-                </li>
-                <li class="navigation-mobile__item">
-                  <a class="navigation-mobile__link" href="./portfolio.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="navigation-mobile__item">
-                  <a class="navigation-mobile__link" href="./index.html"
-                    >Kontakt</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            
-            <ul class="communication-mobile">
-              <li class="communication__item">
-                <a href="tel:+48111111111" class="communication-mobile__link"
-                  >+48 111 111 111</a
-                >
-              </li>
-              <li class="communication-mobile__item">
-                <a href="mailto:info@devstudio.com" class="communication-mobile__link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              
-            </ul>
-
-            <ul class="mobile-media">
-        <li><a href="#" class="mobile-media__link">Instagram</a></li>
-        <li><a href="#" class="mobile-media__link">Twitter</a></li>
-        <li><a href="#" class="mobile-media__link">Facebook</a></li>
-        <li><a href="#" class="mobile-media__link">Linkedln</a></li>
-      </ul>
-            </div>
-          </div>
+          <button
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="menu-toggle__button js-open-menu"
+            type="button"
+          >
+            <svg class="burger__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu_40px-1"></use>
+            </svg>
+          </button>
         </div>
+      </div>
+
+      <div class="burger js-menu-container" id="mobile-menu">
+        <button class="menu-toggle__button js-close-menu">
+          <svg class="burger__icon burger__icon--close" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="navigation-mobile">
+            <li class="navigation-mobile__item">
+              <a class="navigation-mobile__link" href="./index.html">Agencja</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a class="navigation-mobile__link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation-mobile__item">
+              <a class="navigation-mobile__link" href="./index.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="communication-mobile">
+          <li class="communication-mobile__item">
+            <a
+              href="tel:+48111111111"
+              class="communication-mobile__link communication-mobile__link--color"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="communication-mobile__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="communication-mobile__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-media">
+          <li clas="mobile-media__item">
+            <a href="#" class="mobile-media__link">Instagram</a>
+          </li>
+          <li clas="mobile-media__item">
+            <a href="#" class="mobile-media__link">Twitter</a>
+          </li>
+          <li clas="mobile-media__item">
+            <a href="#" class="mobile-media__link">Facebook</a>
+          </li>
+          <li clas="mobile-media__item">
+            <a href="#" class="mobile-media__link mobile-media__link--border">Linkedln</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -609,7 +612,7 @@
         </form>
       </div>
     </div>
-     <!--skrypt-mobile-->
+    <!--skrypt-mobile-->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
