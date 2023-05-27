@@ -1,3 +1,4 @@
+@use "../utils/mixins" as *;
 .section {
   background: var(--color-background-primary);
 
@@ -8,11 +9,28 @@
         var(--color-gradient-primary),
         var(--color-gradient-primary)
       ),
-      url(/goit-markup-hw-04/images/backgroundphoto/maintitle.jpg);
-    max-width: 1600;
-    background-repeat: round;
-    background-position: 50% 50%;
+      url("/goit-markup-hw-08/images/backgroundphoto/maintitle480x400x1mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--background-primary {
+      background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitle960x800x2mobile.jpg");
+      background-size: cover;
+      @include tablet {
+        background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitle768x400x1tablet.jpg");
+        background-size: cover;
+      }
+      @include desktop {
+        background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitlep1x1600x600x1desktop.jpg");
+        background-size: cover;
+      }
+    }
+  }
+
   &--backgroung-secoundary {
     background: var(--color-background-light);
   }
