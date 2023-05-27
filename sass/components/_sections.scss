@@ -3,7 +3,7 @@
   background: var(--color-background-primary);
 
   &--background-primary {
-    background: var(--background-transparency-cloud);
+    background: var(--color-background-secondary-opasity);
     background-image: linear-gradient(
         to top left,
         var(--color-gradient-primary),
@@ -13,6 +13,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include tablet {
+      background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitle768x400x1tablet.jpg");
+    }
+    @include desktop {
+      background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitlep1x1600x600x1desktop.jpg");
+    }
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -21,11 +27,11 @@
       background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitle960x800x2mobile.jpg");
       background-size: cover;
       @include tablet {
-        background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitle768x400x1tablet.jpg");
+        background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitle1536x800x2tablet.jpg");
         background-size: cover;
       }
       @include desktop {
-        background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitlep1x1600x600x1desktop.jpg");
+        background-image: url("/goit-markup-hw-08/images/backgroundphoto/maintitlep1x3200x1200x2desktop.jpg");
         background-size: cover;
       }
     }
@@ -43,5 +49,11 @@
     letter-spacing: 0.03em;
     padding-top: 94px;
     padding-bottom: 50px;
+  }
+  &--display {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
   }
 }

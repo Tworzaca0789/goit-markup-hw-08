@@ -1,3 +1,4 @@
+@use "../utils/mixins" as *;
 .button {
   font-size: var(--font-size-secondary);
   background-color: var(--color-background-hover);

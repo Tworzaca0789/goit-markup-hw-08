@@ -1,44 +1,75 @@
+@use "../utils/mixins" as *;
 .description {
   background-color: var(--color-background-primary);
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 30px;
+  display: block;
+  flex-direction: column;
   list-style: none;
-  padding-top: 94px;
-
-  &__item {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  @include tablet {
+    display: flex;
+    paddiong-bottom: 45px;
+    gap: 30px;
   }
-
+  @include desktop {
+    flex-direction: row;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include desktop {
+      display: inline-block;
+    }
+  }
   &__logo {
-    max-width: 270px;
-    max-height: 120px;
-    padding: 25px 100px;
+    display: flex;
+    max-width: 450px;
     border-radius: 4px;
+    align-items: center;
+    margin-top: 30px;
+    padding: 25px 190px;
     background-color: var(--background-icon-light);
+    @include tablet {
+      max-width: 354px;
+      padding: 25px 142px;
+    }
+    @include desktop {
+      max-width: 270px;
+      max-height: 120px;
+      padding: 25px 100px;
+    }
   }
 
   &__icon {
     display: flex;
-    flex-direction: row;
-    align-content: stretch;
+    flex-direction: column;
+    align-content: center;
   }
-
   &__title {
     font-weight: var(--medium-weight);
     font-size: var(--font-size-primary);
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    text-align: center;
     padding-top: 30px;
+    padding-bottom: 10px;
+    @include tablet {
+      text-align: start;
+    }
   }
   &__post {
     font-size: var(--font-size-primary);
     line-height: 1.7;
     color: var(--color-font-mixed);
     letter-spacing: 0.03em;
-    padding-top: 10px;
   }
 }
