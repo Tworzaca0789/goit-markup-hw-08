@@ -1,16 +1,29 @@
+@use "../utils/mixins" as *;
 .logos {
   display: flex;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  justify-content: space-between;
-  padding-bottom: 94px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   gap: 30px;
   fill: solid var(--color-font-secondary);
+  @include desktop {
+    flex-wrap: nowrap;
+    padding-bottom: 94px;
+  }
 
   &__icon {
     border: 1px solid var(--color-icon-secondary);
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 16px 52px;
+    @include tablet {
+      margin: 16px 60px;
+    }
+    @include desktop {
+      padding: 16px 32px;
+    }
 
     &:hover,
     &:focus {
@@ -22,5 +35,8 @@
     display: flex;
     fill: var(--color-icon-secondary);
     cursor: pointer;
+    @include tablet {
+      align-items: center;
+    }
   }
 }

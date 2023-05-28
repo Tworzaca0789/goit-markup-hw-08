@@ -54,6 +54,7 @@
       padding-top: 94px;
       padding-bottom: 50px;
     }
+
     &--display {
       display: none;
       @include desktop {
@@ -65,6 +66,7 @@
     &--size {
       @include desktop {
         font-size: var(--font-size-senary);
+        
       }
     }
   }
