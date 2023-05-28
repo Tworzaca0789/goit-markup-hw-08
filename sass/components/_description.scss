@@ -15,18 +15,14 @@
   @include desktop {
     flex-direction: row;
     padding-top: 94px;
-    padding-bottom: 94px;
   }
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     @include tablet {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    @include desktop {
       display: inline-block;
+      justify-content: space-between;
     }
   }
   &__logo {

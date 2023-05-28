@@ -43,17 +43,29 @@
 
   &__title {
     font-weight: var(--medium-weight);
-    font-size: var(--font-size-senary);
+    font-size: var(--font-size-center);
     line-height: 1.1;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
-    padding-bottom: 50px;
-  }
-  &--display {
-    display: none;
-    @include tablet {
-      display: flex;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    @include desktop {
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
+    &--display {
+      display: none;
+      @include desktop {
+        display: block;
+        align-items: center;
+        font-size: var(--font-size-senary);
+      }
+    }
+    &--size {
+      @include desktop {
+        font-size: var(--font-size-senary);
+      }
     }
   }
 }

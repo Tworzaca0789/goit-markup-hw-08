@@ -84,7 +84,9 @@
       </div>
 
       <div class="burger js-menu-container" id="mobile-menu">
-        <button class="menu-toggle__button menu-toggle__button--position js-close-menu">
+        <button
+          class="menu-toggle__button menu-toggle__button--position js-close-menu"
+        >
           <svg class="burger__icon burger__icon--close" width="40" height="40">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
           </svg>
@@ -134,7 +136,9 @@
             <a href="#" class="mobile-media__link">Facebook</a>
           </li>
           <li clas="mobile-media__item">
-            <a href="#" class="mobile-media__link mobile-media__link--border">Linkedln</a>
+            <a href="#" class="mobile-media__link mobile-media__link--border"
+              >Linkedln</a
+            >
           </li>
         </ul>
       </div>
@@ -215,15 +219,15 @@
       <!--main studio blok collection-->
       <section class="section">
         <div class="container">
-          <h2 class="section__title section__title--display">Czym się zajmujemy</h2>
+          <h2 class="section__title section__title--display">
+            Czym się zajmujemy
+          </h2>
           <ul class="collection">
             <li class="collection__item">
               <img
                 class="collection__image"
                 src="./images/aboutus/about_us_img1.jpg"
                 alt="programista pisze kody"
-                width="370"
-                height="294"
               />
               <p class="collection__name">Aplikacje komputerowe</p>
             </li>
@@ -232,8 +236,6 @@
                 class="collection__image"
                 src="./images/aboutus/about_us_img2.jpg"
                 alt="programista paruje telefon z komputerem"
-                width="370"
-                height="294"
               />
               <p class="collection__name">Aplikacje mobilne</p>
             </li>
@@ -242,25 +244,30 @@
                 class="collection__image"
                 src="./images/aboutus/about_us_img3.jpg"
                 alt="programista sprawdza piksele"
-                width="370"
-                height="294"
               />
               <p class="collection__name">Rozwiązania Graficzne</p>
             </li>
           </ul>
         </div>
       </section>
-      <!--main studio section--blok gallery--
+      <!--main studio section--blok gallery-->
       <section class="section--backgroung-secoundary">
         <div class="container">
-          <h2 class="section__title">Nasz zespół</h2>
+          <h2 class="section__title section__title--size">Nasz zespół</h2>
           <ul class="gallery">
             <li class="gallery__item">
               <img
-                src="./images/ourteam/ourteam_img1.jpg"
+                src="images/ourteam/ourteam_img1.jpg"
                 alt="zadowolony producent"
-                width="270"
-                height="260"
+                srcset="
+                  images/ourteam/ourteamp1x450x460x1mobile.jpg  450w,
+                  images/ourteam/ourteamp1x900x920x2mobile.jpg  900w,
+                  images/ourteam/ourteamp1x354x374x1tablet.jpg  354w,
+                  images/ourteam/ourteamp1x708x748x2tablet.jpg  708w,
+                  images/ourteam/ourteamp1x270x260@1desktop.jpg 270w,
+                  images/ourteam/ourteamp1x540x520@2desktop.jpg 540w
+                "
+                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
               />
               <p class="gallery__name">John Doe</p>
               <p class="gallery__explanation">Product Designer</p>
@@ -289,10 +296,17 @@
             </li>
             <li class="gallery__item">
               <img
-                src="./images/ourteam/ourteam_img2.jpg"
+                src="images/ourteam/ourteam_img2.jpg"
                 alt="programista z blond włosami"
-                width="270"
-                height="260"
+                srcset="
+                  images/ourteam/ourteamp2x450x460x1mobile.jpg  450w,
+                  images/ourteam/ourteamp2x900x920x2mobile.jpg  900w,
+                  images/ourteam/ourteamp2x354x374x1tablet.jpg  354w,
+                  images/ourteam/ourteamp2x708x748x2tablet.jpg  708w,
+                  images/ourteam/ourteamp2x270x260@1desktop.jpg 270w,
+                  images/ourteam/ourteamp2x540x520@2desktop.jpg 540w
+                "
+                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
               />
               <p class="gallery__name">John Doe</p>
               <p class="gallery__explanation">Frontend Developer</p>
@@ -321,10 +335,17 @@
             </li>
             <li class="gallery__item">
               <img
-                src="./images/ourteam/ourteam_img3.jpg"
+                src="images/ourteam/ourteam_img3.jpg"
                 alt="znawca marketingu"
-                width="270"
-                height="260"
+                srcset="
+                  images/ourteam/ourteamp3x450x460x1mobile.jpg  450w,
+                  images/ourteam/ourteamp3x900x920x2mobile.jpg  900w,
+                  images/ourteam/ourteamp3x354x374x1tablet.jpg  354w,
+                  images/ourteam/ourteamp3x708x748x2tablet.jpg  708w,
+                  images/ourteam/ourteamp3x270x260@1desktop.jpg 270w,
+                  images/ourteam/ourteamp3x540x520@2desktop.jpg 540w
+                "
+                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
               />
               <p class="gallery__name">John Doe</p>
               <p class="gallery__explanation">Marketing</p>
@@ -353,10 +374,17 @@
             </li>
             <li class="gallery__item">
               <img
-                src="./images/ourteam/ourteam_img4.jpg"
+                src="images/ourteam/ourteam_img4.jpg"
                 alt="projektant"
-                width="270"
-                height="260"
+                srcset="
+                  images/ourteam/ourteamp4x450x460x1mobile.jpg  450w,
+                  images/ourteam/ourteamp4x900x920x2mobile.jpg  900w,
+                  images/ourteam/ourteamp4x354x374x1tablet.jpg  354w,
+                  images/ourteam/ourteamp4x708x748x2tablet.jpg  708w,
+                  images/ourteam/ourteamp4x270x260@1desktop.jpg 270w,
+                  images/ourteam/ourteamp4x540x520@2desktop.jpg 540w
+                "
+                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
               />
               <p class="gallery__name">John Doe</p>
               <p class="gallery__explanation">UI Designer</p>
