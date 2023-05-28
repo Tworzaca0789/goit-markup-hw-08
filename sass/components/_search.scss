@@ -1,22 +1,27 @@
+@use "../utils/mixins" as *;
 .search {
-  display: block;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
 
   &__box {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
     gap: 12px;
+    align-items: center;
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &__input {
-    position: relative;
     left: -6px;
     border: 1px solid var(--color-border-tertiary);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px var(--color-drop-shadow-primary));
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: var(--color-background-secondary);
     padding-top: 15px;
@@ -28,6 +33,9 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: var(--color-font-secondary);
+    @include desktop {
+      width: 358px;
+    }
 
     &:hover {
       border-color: var(--color-border-quaternary);

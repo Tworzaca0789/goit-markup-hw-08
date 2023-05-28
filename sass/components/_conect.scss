@@ -1,10 +1,14 @@
+@use "../utils/mixins" as *;
 .conect {
   display: flex;
 
   &__list {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    align-items: center;
+    @include desktop {
+      align-items: flex-start;
+    }
   }
 
   &__item {

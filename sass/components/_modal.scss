@@ -1,11 +1,12 @@
+@use "../utils/mixins" as *;
 .modal {
   position: relative;
   display: flex;
   justify-content: center;
   left: 50%;
   top: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   transform: translate(-50%, -50%);
   transition-property: transform;
   transition-duration: 250ms;
@@ -15,6 +16,10 @@
     0px 1px 1px var(--color-box-shadow-septenary),
     0px 2px 1px var(--color-box-shadow-octonary);
   border-radius: 4px;
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 
   &__switch {
     position: absolute;
@@ -28,11 +33,8 @@
     padding: 6px;
     border-radius: 50%;
     z-index: 1;
-
     &:hover {
       fill: var(--color-icon-hover);
-      border-color: var(--color-border-quaternary);
-      background-color: var(--color-background-unique);
       cursor: pointer;
     }
   }

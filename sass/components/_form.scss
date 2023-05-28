@@ -1,3 +1,4 @@
+@use "../utils/mixins" as *;
 .form {
   display: flex;
 
@@ -5,11 +6,16 @@
     position: relative;
     font-weight: var(--medium-weight);
     font-size: var(--font-size-quaternary);
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
     display: block;
+    width: 370px;
+    @include desktop {
+      line-height: 1.15;
+      width: 448px;
+    }
   }
 
   &_box {
@@ -27,18 +33,30 @@
     display: flex;
     flex-direction: column;
     border-radius: 4px solid var(--color-border-senary);
+    &:hover,
+    &:focus {
+      color: var(--color-border-quaternary);
+      cursor: pointer;
+      @include desktop {
+        display: none;
+      }
+    }
   }
 
   &__picture {
     position: relative;
     padding: 11px 12px;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid var(--color-border-senary);
     border-radius: 4px;
     margin-top: 4px;
     margin-bottom: 10px;
     display: flex;
+    @include desktop {
+      width: 448px;
+      height: 40px;
+    }
 
     &:hover,
     &:focus {

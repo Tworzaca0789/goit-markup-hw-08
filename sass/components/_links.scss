@@ -1,6 +1,7 @@
 @use "../utils/mixins" as *;
 .link {
   display: flex;
+  text-decoration: none;
   @include tablet {
     font-size: var(--font-size-primary);
     text-decoration-line: none;

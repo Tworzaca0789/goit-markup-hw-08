@@ -1,53 +1,53 @@
 @use "../utils/mixins" as *;
 .description {
   background-color: var(--color-background-primary);
-  display: block;
+  display: flex;
   flex-direction: column;
-  list-style: none;
+  text-align: left;
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
+  gap: 30px;
   @include tablet {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     paddiong-bottom: 45px;
-    gap: 30px;
   }
   @include desktop {
-    flex-direction: row;
+    flex-wrap: nowrap;
     padding-top: 94px;
+    padding-bottom: 30px;
+    list-style: none;
   }
   &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: left;
+    width: 450px;
     @include tablet {
-      display: inline-block;
-      justify-content: space-between;
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
     }
   }
   &__logo {
     display: flex;
-    max-width: 450px;
-    border-radius: 4px;
-    align-items: center;
-    margin-top: 30px;
     padding: 25px 190px;
+    border-radius: 4px;
     background-color: var(--background-icon-light);
     @include tablet {
-      max-width: 354px;
       padding: 25px 142px;
     }
     @include desktop {
-      max-width: 270px;
-      max-height: 120px;
       padding: 25px 100px;
     }
   }
 
   &__icon {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
+    align-content: stretch;
   }
   &__title {
     font-weight: var(--medium-weight);
@@ -59,10 +59,12 @@
     padding-top: 30px;
     padding-bottom: 10px;
     @include tablet {
-      text-align: start;
+      text-align: left;
     }
   }
   &__post {
+    display: flex;
+    text-align: left;
     font-size: var(--font-size-primary);
     line-height: 1.7;
     color: var(--color-font-mixed);

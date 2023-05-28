@@ -1,6 +1,7 @@
+@use "../utils/mixins" as *;
 .record {
   position: relative;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid var(--color-border-senary);
   border-radius: 4px;
@@ -10,9 +11,13 @@
   display: flex;
   outline: none;
   color: var(--color-font-mixed);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-primary);
   line-height: 1.16;
   letter-spacing: 0.01em;
+  @include desktop {
+    width: 448px;
+    font-size: var(--font-size-s);
+  }
 
   &:hover,
   &:focus {
